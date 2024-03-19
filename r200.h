@@ -7,7 +7,11 @@ class r200
         {
             
         }
+        //using r200 base code modified it to fill LinkedList of Tag structure 
+        //prevents adding duplicate tags automaticaly 
         void add(LinkedList<Tag> *Tags);
+
+        //using r200 base code modified it to return true or false if a given tagID is found
         bool fetch(unsigned int tagToFind);
     private:
         unsigned char ReadMulti[10] = {0XAA,0X00,0X27,0X00,0X03,0X22,0XFF,0XFF,0X4A,0XDD};
