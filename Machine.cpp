@@ -7,6 +7,7 @@ Machine::Machine()
     notDuplicate = true;
 }
 
+//main loop to active different functions of the code by changing the active state 
 void Machine::loop()
 {
     switch(activeState)
@@ -63,6 +64,7 @@ void Machine::fetch(unsigned int tagToFind, int *anttenaArray)
 }
 
 //inventary tracking constantly updates location of all tags and displays them at the end 
+//STILL NEEDS WORK NOT READY
 void Machine::track()
 {
     while(true)
